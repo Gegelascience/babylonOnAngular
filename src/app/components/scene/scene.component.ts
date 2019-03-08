@@ -47,8 +47,7 @@ export class SceneComponent implements OnInit, OnDestroy {
     // Add a camera to the scene and attach it to the canvas
 
     this.vrHelper = scene.createDefaultVRExperience();
-    this.vrHelper.deviceOrientationCamera.position = new Vector3(40, 30, -80);
-    this.vrHelper.deviceOrientationCamera.rotation = new Vector3(0, Math.PI / 6, 0);
+    this.vrHelper.deviceOrientationCamera.position = new Vector3(40, 0, -90);
 
     // Sun
     const sun = new Sun(scene);
